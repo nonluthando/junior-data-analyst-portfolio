@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Data analyst portfolio of Luthando Mbuyane: product analytics, customer segmentation, experiment evaluation and reproducible Python data-cleaning workflows.">
+  <meta name="theme-color" content="#0c0a18">
+  <title>Luthando Mbuyane | Data Analyst</title>
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Luthando Mbuyane home">
+        <span class="brand-mark">LM</span>
+        <span class="brand-name">Luthando Mbuyane</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span class="sr-only">Toggle navigation</span>
+        <span></span><span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" data-nav>
+        <a href="#work">Work</a>
+        <a href="#toolkit">Toolkit</a>
+        <a href="#about">About</a>
+        <a class="nav-cta" href="mailto:luthandombuyane1@outlook.com">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="top">
+      <div class="hero-orb hero-orb-one" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-two" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span> Junior Data Analyst</p>
+          <h1>Turning messy data into <em>decisions people can act on.</em></h1>
+          <p class="hero-lede">
+            I combine computer science, applied statistics and psychology to understand behaviour,
+            evaluate interventions and build repeatable analysis workflows.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">Explore selected work</a>
+            <a class="button button-secondary" href="https://github.com/nonluthando" target="_blank" rel="noreferrer">View GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-meta" aria-label="Key information">
+            <span>South Africa</span>
+            <span>Open to relocation</span>
+            <span>Python · SQL · Statistics</span>
+          </div>
+        </div>
+
+        <aside class="insight-card reveal" aria-label="Featured analysis snapshot">
+          <div class="insight-topline">
+            <span>Analysis snapshot</span>
+            <span class="status-dot">Selected project</span>
+          </div>
+          <div class="insight-main">
+            <span class="metric-label">Overall purchase conversion</span>
+            <strong>20.2%</strong>
+            <div class="metric-track" aria-hidden="true"><span style="width:20.2%"></span></div>
+          </div>
+          <div class="insight-grid">
+            <div>
+              <span>Largest drop-off</span>
+              <strong>59.9%</strong>
+              <small>Product → cart</small>
+            </div>
+            <div>
+              <span>Checkout retention</span>
+              <strong>90.0%</strong>
+              <small>Intent holds</small>
+            </div>
+          </div>
+          <p class="insight-note">
+            The evidence points to a product-page problem, not poor traffic quality — so the next move is targeted UX testing.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section work-section" id="work">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow"><span></span> Selected work</p>
+            <h2>Analysis that ends with a decision.</h2>
+          </div>
+          <p>
+            Each project moves from a business question through evidence and limitations to a practical recommendation.
+          </p>
+        </div>
+
+        <article class="featured-project reveal">
+          <div class="featured-visual">
+            <img src="assets/images/funnel-visual.svg" alt="Funnel chart showing a 59.9 percent drop between product view and cart">
+          </div>
+          <div class="featured-content">
+            <div class="project-number">01 / Product analytics</div>
+            <h3>E-commerce Funnel &amp; Behaviour Analysis</h3>
+            <p class="project-summary">
+              Reconstructed a five-stage customer journey from event-level data to find where healthy traffic failed to become purchases.
+            </p>
+            <ul class="finding-list">
+              <li><strong>20.2%</strong> of users completed a purchase.</li>
+              <li><strong>59.9%</strong> dropped between product view and add-to-cart.</li>
+              <li>Regional and referral patterns were consistent, pointing to structural UX friction.</li>
+            </ul>
+            <div class="decision-box">
+              <span>Recommended decision</span>
+              Prioritise product-page clarity, trust signals and mobile usability, then validate changes with controlled A/B tests.
+            </div>
+            <div class="project-footer">
+              <div class="tags"><span>Python</span><span>SQL</span><span>Excel</span><span>Funnel analysis</span></div>
+              <div class="project-links">
+                <a class="text-link" href="assets/reports/funnel-analysis-report.pdf" target="_blank">Read case study <span aria-hidden="true">↗</span></a>
+                <a class="text-link" href="assets/notebooks/ecommerce-funnel-analysis.ipynb" download>Download notebook <span aria-hidden="true">↓</span></a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <a class="project-image" href="assets/reports/retail-segmentation-report.pdf" target="_blank" aria-label="Open retail segmentation report">
+              <img src="assets/images/retail-segmentation.webp" alt="Charts comparing customer distribution with sales contribution across retail segments">
+            </a>
+            <div class="project-card-body">
+              <div class="project-number">02 / Customer analytics</div>
+              <h3>Retail Customer Segmentation</h3>
+              <p>
+                Compared customer share with revenue contribution to identify segments that create disproportionate commercial value.
+              </p>
+              <div class="key-result">
+                <span>Key insight</span>
+                Premium customers, Older Families and Retirees contributed more sales than their population share suggested.
+              </div>
+              <div class="tags"><span>Segmentation</span><span>EDA</span><span>Commercial insight</span></div>
+              <a class="text-link" href="assets/reports/retail-segmentation-report.pdf" target="_blank">Read case study <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <a class="project-image" href="assets/reports/trial-vs-control-report.pdf" target="_blank" aria-label="Open trial versus control report">
+              <img src="assets/images/trial-control.webp" alt="Trial and control store performance charts with confidence intervals">
+            </a>
+            <div class="project-card-body">
+              <div class="project-number">03 / Experiment evaluation</div>
+              <h3>Trial vs Control Store Evaluation</h3>
+              <p>
+                Used matched pre-trial trends and confidence intervals to assess whether observed sales and customer uplift was meaningful.
+              </p>
+              <div class="key-result">
+                <span>Key insight</span>
+                The trial showed promise in specific periods, but not a uniformly significant effect — supporting extension, not immediate rollout.
+              </div>
+              <div class="tags"><span>Matched controls</span><span>Confidence intervals</span><span>Decision risk</span></div>
+              <a class="text-link" href="assets/reports/trial-vs-control-report.pdf" target="_blank">Read case study <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="project-card project-card-wide reveal">
+            <a class="project-image" href="assets/code/csv_cleaning_tool.py" download aria-label="Download CSV data cleaning tool">
+              <img src="assets/images/data-cleaning-pipeline.svg" alt="Diagram of a configurable CSV cleaning workflow from raw input through cleaning profiles to audited CSV and Excel outputs">
+            </a>
+            <div class="project-card-body">
+              <div class="project-number">04 / Data preparation</div>
+              <h3>Configurable CSV Data Cleaning Pipeline</h3>
+              <p>
+                Built a reusable pandas command-line tool that applies safe or aggressive cleaning rules, records every transformation and exports analysis-ready files.
+              </p>
+              <div class="pipeline-stats" aria-label="Pipeline capabilities">
+                <div><strong>2</strong><span>cleaning profiles</span></div>
+                <div><strong>4</strong><span>core cleaning steps</span></div>
+                <div><strong>CSV</strong><span>standard output</span></div>
+                <div><strong>XLSX</strong><span>optional export</span></div>
+              </div>
+              <div class="decision-box compact">
+                <span>Engineering detail</span>
+                Preserves true missing values while trimming text, handles all-null numeric columns safely and produces a human-readable audit log.
+              </div>
+              <div class="project-footer">
+                <div class="tags"><span>Python</span><span>pandas</span><span>Validation</span><span>Automation</span></div>
+                <div class="project-links">
+                  <a class="text-link" href="assets/code/csv_cleaning_tool.py" download>Download Python <span aria-hidden="true">↓</span></a>
+                  <a class="text-link" href="assets/code/README.md" target="_blank">Read project notes <span aria-hidden="true">↗</span></a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <section class="notebook-panel reveal" aria-labelledby="notebook-heading">
+          <div class="notebook-panel-heading">
+            <div>
+              <p class="eyebrow dark"><span></span> Technical evidence</p>
+              <h3 id="notebook-heading">Supporting analysis notebooks</h3>
+            </div>
+            <p>
+              Cleanly named portfolio copies of the original Colab work, preserving the SQL, Python and analytical steps behind the case studies.
+            </p>
+          </div>
+
+          <div class="notebook-grid">
+            <a class="notebook-card" href="assets/notebooks/ecommerce-funnel-analysis.ipynb" download>
+              <span class="notebook-icon" aria-hidden="true">01</span>
+              <div>
+                <strong>E-commerce Funnel Analysis</strong>
+                <p>Five-stage funnel reconstruction, drop-off calculations and behavioural segmentation.</p>
+                <small>Python · SQLite · Product analytics</small>
+              </div>
+              <span class="notebook-arrow" aria-hidden="true">↓</span>
+            </a>
+
+            <a class="notebook-card" href="assets/notebooks/sales-data-analysis-sql-pipeline.ipynb" download>
+              <span class="notebook-icon" aria-hidden="true">02</span>
+              <div>
+                <strong>Sales Analysis SQL Pipeline</strong>
+                <p>Spreadsheet ingestion, SQL aggregation, monthly product analysis and exports.</p>
+                <small>Python · pandas · SQLite</small>
+              </div>
+              <span class="notebook-arrow" aria-hidden="true">↓</span>
+            </a>
+
+            <a class="notebook-card" href="assets/notebooks/video-game-sales-analysis.ipynb" download>
+              <span class="notebook-icon" aria-hidden="true">03</span>
+              <div>
+                <strong>Video Game Sales Analysis</strong>
+                <p>An additional regional, platform and publisher sales exploration.</p>
+                <small>Python · DuckDB · Visualisation</small>
+              </div>
+              <span class="notebook-arrow" aria-hidden="true">↓</span>
+            </a>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="section toolkit-section" id="toolkit">
+      <div class="container toolkit-grid">
+        <div class="toolkit-intro reveal">
+          <p class="eyebrow"><span></span> Toolkit</p>
+          <h2>Technical enough to build it. Human enough to explain it.</h2>
+          <p>
+            My background lets me work across data preparation, statistical reasoning and the behavioural context behind the numbers.
+          </p>
+        </div>
+        <div class="capability-grid reveal">
+          <div class="capability">
+            <span class="capability-index">01</span>
+            <h3>Analyse</h3>
+            <p>Exploratory analysis, funnel metrics, segmentation, trend analysis and KPI design.</p>
+          </div>
+          <div class="capability">
+            <span class="capability-index">02</span>
+            <h3>Evaluate</h3>
+            <p>Confidence intervals, matched controls, limitations and evidence-aware recommendations.</p>
+          </div>
+          <div class="capability">
+            <span class="capability-index">03</span>
+            <h3>Build</h3>
+            <p>Python, SQL, pandas, SQLite, Excel, reusable workflows and validated outputs.</p>
+          </div>
+          <div class="capability">
+            <span class="capability-index">04</span>
+            <h3>Communicate</h3>
+            <p>Clear visual stories, business-first writing and recommendations tied directly to findings.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="container about-grid">
+        <div class="about-statement reveal">
+          <p class="eyebrow"><span></span> About</p>
+          <blockquote>“I’m most interested in the moment where data changes what a team does next.”</blockquote>
+        </div>
+        <div class="about-copy reveal">
+          <p>
+            I am a South African graduate with a background in Computer Science and Psychology, supported by applied statistics coursework.
+            That combination shapes how I work: I care about sound data, but also about the people, incentives and behaviours behind it.
+          </p>
+          <p>
+            I’m particularly drawn to product analytics, customer behaviour, experimentation and data workflows that reduce repetitive work.
+          </p>
+          <div class="about-links">
+            <a href="mailto:luthandombuyane1@outlook.com">luthandombuyane1@outlook.com</a>
+            <a href="https://github.com/nonluthando" target="_blank" rel="noreferrer">github.com/nonluthando <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container contact-card reveal">
+        <div>
+          <p class="eyebrow light"><span></span> Let’s work together</p>
+          <h2>Have a question worth answering with data?</h2>
+        </div>
+        <a class="button button-light" href="mailto:luthandombuyane1@outlook.com">Start a conversation <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span data-year></span> Luthando Mbuyane</p>
+      <p>Designed around evidence, clarity and useful decisions.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
