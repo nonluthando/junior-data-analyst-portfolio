@@ -2,6 +2,13 @@
 
 A responsive, dependency-free static portfolio designed for GitHub Pages.
 
+## What changed in v5
+
+- Re-positioned for junior data analyst roles: SQL / Python / R headline, proof strip, LinkedIn and live-dashboard links.
+- Added the live South African Tech Job Market dashboard as a featured project.
+- Added an Applied Statistics in R section with four reports and charts.
+- Replaced the generic capability grid with a skills matrix tied to projects.
+
 ## What changed in v4
 
 - Added the technical notebook behind the e-commerce funnel case study.
