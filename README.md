@@ -7,7 +7,8 @@ A responsive, dependency-free static portfolio designed for GitHub Pages.
 - Re-positioned for junior data analyst roles: SQL / Python / R headline, proof strip, LinkedIn and live-dashboard links.
 - Added the live South African Tech Job Market dashboard as a featured project.
 - Added an Applied Statistics in R section with four reports and charts.
-- Replaced the generic capability grid with a skills matrix tied to projects.
+- Restyled in the Notion-like theme shared with portfolio-v2 (`assets/css/notion.css`, `assets/js/theme.js`) with a light/dark toggle.
+- Replaced the generic capability grid with a skills properties table.
 
 ## What changed in v4
 
@@ -20,8 +21,8 @@ A responsive, dependency-free static portfolio designed for GitHub Pages.
 ## Files
 
 - `index.html` — page content
-- `styles.css` — full responsive styling
-- `script.js` — mobile navigation, sticky header and reveal effects
+- `assets/css/notion.css` — shared Notion-style theme
+- `assets/js/theme.js` — light/dark toggle and `/` shortcut
 - `assets/reports/` — downloadable PDF case studies
 - `assets/code/` — configurable CSV cleaning tool, requirements and project notes
 - `assets/notebooks/` — three cleanly named supporting Jupyter notebooks
