@@ -1,470 +1,296 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Junior data analyst portfolio of Luthando Mbuyane: SQL, Python and R analysis, product and customer analytics, statistical testing, experiment evaluation and a live labour-market dashboard.">
-  <meta name="theme-color" content="#0c0a18">
-  <title>Luthando Mbuyane | Data Analyst</title>
+  <title>Luthando Mbuyane | Junior Data Analyst</title>
   <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="assets/css/notion.css">
+  <script src="assets/js/theme.js"></script>
 </head>
 <body>
-  <a class="skip-link" href="#main-content">Skip to content</a>
 
-  <header class="site-header" data-header>
-    <div class="container nav-wrap">
-      <a class="brand" href="#top" aria-label="Luthando Mbuyane home">
-        <span class="brand-mark">LM</span>
-        <span class="brand-name">Luthando Mbuyane</span>
-      </a>
+<header class="topbar">
+  <div class="topbar-inner">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="#top">📊 Luthando</a>
+    </nav>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="#projects">Projects</a>
+      <a href="#statistics">Statistics</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <a href="https://github.com/nonluthando" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode"></button>
+    </nav>
+  </div>
+</header>
 
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
-        <span class="sr-only">Toggle navigation</span>
-        <span></span><span></span>
-      </button>
+<div class="cover" role="img" aria-label="Decorative green banner"></div>
 
-      <nav class="site-nav" id="site-nav" data-nav>
-        <a href="#work">Projects</a>
-        <a href="#statistics">Statistics</a>
-        <a href="#toolkit">Skills</a>
-        <a href="#about">About</a>
-        <a class="nav-cta" href="mailto:luthandombuyane1@outlook.com">Contact</a>
-      </nav>
+<main class="page" id="top">
+  <span class="page-icon" aria-hidden="true">📊</span>
+  <h1 class="page-title">Luthando Mbuyane</h1>
+  <p class="page-sub">Junior data analyst. I turn messy data into decisions people can act on.</p>
+
+  <dl class="props">
+    <dt>💼 Role</dt>
+    <dd><span class="tag green">Junior data analyst</span><span class="tag blue">Analytics engineering</span><span class="tag purple">Behavioural perspective</span></dd>
+    <dt>🎓 Degree</dt>
+    <dd><span class="tag green degree-main">BSc Computer Science &amp; Psychology</span></dd>
+    <dt>📊 Data stack</dt>
+    <dd>
+      <span class="tag yellow">Python</span>
+      <span class="tag blue">SQL</span>
+      <span class="tag green">pandas</span>
+      <span class="tag purple">R</span>
+      <span class="tag orange">DuckDB</span>
+      <span class="tag pink">Excel</span>
+      <span class="tag">Streamlit</span>
+    </dd>
+    <dt>📐 Statistics</dt>
+    <dd>
+      <span class="tag purple">t-tests</span>
+      <span class="tag blue">ANOVA</span>
+      <span class="tag yellow">Chi-square</span>
+      <span class="tag pink">Confidence intervals</span>
+      <span class="tag green">Matched controls</span>
+    </dd>
+    <dt>📚 Coursework</dt>
+    <dd>Inferential &amp; Business Statistics · Regression · Time Series · Machine Learning · Operations Research</dd>
+    <dt>📍 Location</dt>
+    <dd>South Africa · open to relocation</dd>
+    <dt>🟢 Status</dt>
+    <dd><span class="tag green">Open to junior data analyst roles</span></dd>
+  </dl>
+
+  <p>
+    I write the SQL, Python and R to prepare messy data, test whether an effect is real, and turn the result into a recommendation a team can act on.
+    My psychology background adds research design and a habit of asking what behaviour sits behind the numbers.
+  </p>
+
+  <div class="callout row">
+    <span class="emoji" aria-hidden="true">💡</span>
+    <div>
+      <strong>How I work.</strong>
+      Every case study below moves from a business question through evidence and limitations to a practical recommendation, and says what the data cannot support.
     </div>
-  </header>
+  </div>
 
-  <main id="main-content">
-    <section class="hero" id="top">
-      <div class="hero-orb hero-orb-one" aria-hidden="true"></div>
-      <div class="hero-orb hero-orb-two" aria-hidden="true"></div>
-      <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <p class="eyebrow"><span></span> Junior Data Analyst · SQL · Python · R</p>
-          <h1>Turning messy data into <em>decisions people can act on.</em></h1>
-          <p class="hero-lede">
-            BSc Computer Science &amp; Psychology graduate. I write the SQL, Python and R to prepare messy data,
-            test whether an effect is real, and turn the result into a recommendation a team can act on.
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#work">Explore selected work</a>
-            <a class="button button-secondary" href="https://sa-tech-job-market-3jqhrdat8echekjaasjvyv.streamlit.app" target="_blank" rel="noopener noreferrer">Live dashboard <span aria-hidden="true">↗</span></a>
-            <a class="button button-secondary" href="https://www.linkedin.com/in/luthandombuyane213" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
-          </div>
-          <div class="hero-meta" aria-label="Key information">
-            <span>South Africa</span>
-            <span>Open to relocation</span>
-            <span>Available for junior data roles</span>
-          </div>
-        </div>
+  <div class="actions">
+    <a class="button primary" href="#projects">See projects ↓</a>
+    <a class="button" href="https://sa-tech-job-market-3jqhrdat8echekjaasjvyv.streamlit.app" target="_blank" rel="noopener noreferrer">Live dashboard ↗</a>
+    <a class="button" href="https://www.linkedin.com/in/luthandombuyane213" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+  </div>
 
-        <aside class="insight-card reveal" aria-label="Featured analysis snapshot">
-          <div class="insight-topline">
-            <span>Analysis snapshot</span>
-            <span class="status-dot">Selected project</span>
-          </div>
-          <div class="insight-main">
-            <span class="metric-label">Overall purchase conversion</span>
-            <strong>20.2%</strong>
-            <div class="metric-track" aria-hidden="true"><span style="width:20.2%"></span></div>
-          </div>
-          <div class="insight-grid">
-            <div>
-              <span>Largest drop-off</span>
-              <strong>59.9%</strong>
-              <small>Product → cart</small>
-            </div>
-            <div>
-              <span>Checkout retention</span>
-              <strong>90.0%</strong>
-              <small>Intent holds</small>
-            </div>
-          </div>
-          <p class="insight-note">
-            The evidence points to a product-page problem, not poor traffic quality — so the next move is targeted UX testing.
-          </p>
-        </aside>
-      </div>
-    </section>
+  <p class="slash-hint">Press <kbd>/</kbd> to jump to the contents, or use the links below.</p>
+  <nav class="toc" id="toc" aria-label="Contents">
+    <a href="#projects">Projects</a>
+    <a href="#pipeline">Job-market pipeline</a>
+    <a href="#statistics">Applied statistics in R</a>
+    <a href="#notebooks">Notebooks</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <section class="proof-strip" aria-label="Portfolio at a glance">
-      <div class="container proof-grid">
-        <div><strong>5</strong><span>business &amp; labour-market case studies</span></div>
-        <div><strong>7</strong><span>written reports to read</span></div>
-        <div><strong>3</strong><span>SQL &amp; Python notebooks</span></div>
-        <div><strong>1</strong><span>live, deployed dashboard</span></div>
-        <div><strong>4</strong><span>statistical test families in R</span></div>
-      </div>
-    </section>
+  <h2 id="projects">⚡ Projects</h2>
+  <p class="muted">Five analyses, each with a written report, notebook or live app behind it.</p>
 
-    <section class="section work-section" id="work">
-      <div class="container">
-        <div class="section-heading reveal">
-          <div>
-            <p class="eyebrow"><span></span> Projects</p>
-            <h2>Analysis that ends with a decision.</h2>
-          </div>
-          <p>
-            Each project moves from a business question through evidence and limitations to a practical recommendation.
-          </p>
-        </div>
-
-        <article class="featured-project reveal">
-          <div class="featured-visual">
-            <img src="assets/images/funnel-visual.svg" alt="Funnel chart showing a 59.9 percent drop between product view and cart">
-          </div>
-          <div class="featured-content">
-            <div class="project-number">01 / Product analytics</div>
-            <h3>E-commerce Funnel &amp; Behaviour Analysis</h3>
-            <p class="project-summary">
-              Reconstructed a five-stage customer journey from event-level data to find where healthy traffic failed to become purchases.
-            </p>
-            <ul class="finding-list">
-              <li><strong>20.2%</strong> of users completed a purchase.</li>
-              <li><strong>59.9%</strong> dropped between product view and add-to-cart.</li>
-              <li>Regional and referral patterns were consistent, pointing to structural UX friction.</li>
-            </ul>
-            <div class="decision-box">
-              <span>Recommended decision</span>
-              Prioritise product-page clarity, trust signals and mobile usability, then validate changes with controlled A/B tests.
-            </div>
-            <div class="project-footer">
-              <div class="tags"><span>Python</span><span>SQL</span><span>Excel</span><span>Funnel analysis</span></div>
-              <div class="project-links">
-                <a class="text-link" href="assets/reports/funnel-analysis-report.pdf" target="_blank">Read case study <span aria-hidden="true">↗</span></a>
-                <a class="text-link" href="assets/notebooks/ecommerce-funnel-analysis.ipynb" download>Download notebook <span aria-hidden="true">↓</span></a>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article class="featured-project featured-light reveal">
-          <div class="featured-visual featured-shot">
-            <img src="assets/images/job-market-dashboard.png" alt="Streamlit dashboard of South African tech vacancies showing 2,566 vacancies, 15 employers, vacancy activity over time and role-level mix">
-          </div>
-          <div class="featured-content">
-            <div class="project-number">02 / Labour-market analytics · Live</div>
-            <h3>South African Tech Job Market Intelligence</h3>
-            <p class="project-summary">
-              An end-to-end analytics-engineering pipeline that collects public technology vacancies directly from employer career sites across ten recruitment platforms, standardises them into a tested, schema-controlled dataset and publishes a dashboard on hiring, skills and early-career demand.
-            </p>
-            <ul class="finding-list">
-              <li><strong>10</strong> recruitment-platform adapters, each tested against its own API shape and failure modes.</li>
-              <li><strong>35</strong> employer sources currently collected, from 44 configured and 51 employers in the registry.</li>
-              <li>Early-career roles are a filter, not the scope, so thin supply is shown with sample-size caveats.</li>
-            </ul>
-            <div class="decision-box">
-              <span>Analytical decision</span>
-              An early build found only 2 early-career roles among 72 jobs, so I widened scope to the whole market and kept early-career as a filter rather than drawing conclusions from a tiny sample.
-            </div>
-            <div class="project-footer">
-              <div class="tags"><span>Python</span><span>pandas</span><span>DuckDB</span><span>Parquet</span><span>Streamlit</span><span>Data quality</span></div>
-              <div class="project-links">
-                <a class="text-link" href="https://sa-tech-job-market-3jqhrdat8echekjaasjvyv.streamlit.app" target="_blank" rel="noopener noreferrer">Open live dashboard <span aria-hidden="true">↗</span></a>
-                <a class="text-link" href="https://github.com/nonluthando/sa-grad-tech-job-market" target="_blank" rel="noopener noreferrer">Repository <span aria-hidden="true">↗</span></a>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <section class="pipeline-panel reveal" aria-labelledby="pipeline-heading">
-          <div class="notebook-panel-heading">
-            <div>
-              <p class="eyebrow dark"><span></span> Under the hood</p>
-              <h3 id="pipeline-heading">From employer career pages to analysis-ready data</h3>
-            </div>
-            <p>
-              Employer-direct collection gives a different view from job boards, and conservative deduplication keeps repeated vacancies from inflating the counts.
-            </p>
-          </div>
-
-          <ol class="flow" aria-label="Pipeline stages">
-            <li>Collect</li><li>Raw snapshots</li><li>Validate</li><li>Clean</li><li>Extract skills</li><li>Classify</li><li>Deduplicate</li><li>Parquet marts</li><li>Dashboard</li>
-          </ol>
-
-          <div class="pipeline-cols">
-            <div>
-              <h4>Collect &amp; preserve</h4>
-              <p>Ten dedicated adapters (Greenhouse, Lever, Workday, SAP SuccessFactors, Oracle HCM, WordPress Job Manager, Workable, Breezy HR, SmartRecruiters and Ashby) across a 51-employer registry, each handling its own pagination, detail endpoints and failure modes. Raw JSON/HTML is stored unchanged with timestamps and SHA-256 hashes, so cleaning logic can improve without recollecting history.</p>
-            </div>
-            <div>
-              <h4>Standardise &amp; extract</h4>
-              <p>HTML stripped, locations and workplace type normalised, and missing values handled explicitly. A curated taxonomy extracts languages, frameworks, databases, cloud platforms and tools, keeping the matched text as evidence, and splits minimum from preferred requirements.</p>
-            </div>
-            <div>
-              <h4>Classify, explainably</h4>
-              <p>Rule-based classification by seniority, role, domain, employment and workplace type comes first. Optional scikit-learn (TF-IDF + logistic regression) and Gemini layers only suggest values for unresolved vacancies, write to separate fields and never overwrite the canonical data.</p>
-            </div>
-            <div>
-              <h4>Publish &amp; validate</h4>
-              <p><code>jobs.parquet</code> is the one-row-per-vacancy source of truth, with <code>job_skills</code> and <code>job_requirements</code> tables beside it. Dashboard marts are checked for job keys and joins, and three data-quality reports cover transformation, skills and the dashboard contract.</p>
-            </div>
-          </div>
-
-          <div class="pipeline-proof">
-            <div><strong>Tested</strong><span>pytest suite covering ingestion, classification and the dashboard contract</span></div>
-            <div><strong>Audited</strong><span>every regex classifier checked against live postings, with each confirmed bug fixed and re-verified</span></div>
-            <div><strong>3</strong><span>data-quality reports: transformation, skills and dashboard contract</span></div>
-          </div>
-        </section>
-
-        <div class="project-grid">
-          <article class="project-card reveal">
-            <a class="project-image" href="assets/reports/retail-segmentation-report.pdf" target="_blank" aria-label="Open retail segmentation report">
-              <img src="assets/images/retail-segmentation.webp" alt="Charts comparing customer distribution with sales contribution across retail segments">
-            </a>
-            <div class="project-card-body">
-              <div class="project-number">03 / Customer analytics</div>
-              <h3>Retail Customer Segmentation</h3>
-              <p>
-                Compared customer share with revenue contribution to identify segments that create disproportionate commercial value.
-              </p>
-              <div class="key-result">
-                <span>Key insight</span>
-                Premium customers, Older Families and Retirees contributed more sales than their population share suggested.
-              </div>
-              <div class="tags"><span>Segmentation</span><span>EDA</span><span>Commercial insight</span></div>
-              <a class="text-link" href="assets/reports/retail-segmentation-report.pdf" target="_blank">Read case study <span aria-hidden="true">↗</span></a>
-            </div>
-          </article>
-
-          <article class="project-card reveal">
-            <a class="project-image" href="assets/reports/trial-vs-control-report.pdf" target="_blank" aria-label="Open trial versus control report">
-              <img src="assets/images/trial-control.webp" alt="Trial and control store performance charts with confidence intervals">
-            </a>
-            <div class="project-card-body">
-              <div class="project-number">04 / Experiment evaluation</div>
-              <h3>Trial vs Control Store Evaluation</h3>
-              <p>
-                Used matched pre-trial trends and confidence intervals to assess whether observed sales and customer uplift was meaningful.
-              </p>
-              <div class="key-result">
-                <span>Key insight</span>
-                The trial showed promise in specific periods, but not a uniformly significant effect — supporting extension, not immediate rollout.
-              </div>
-              <div class="tags"><span>Matched controls</span><span>Confidence intervals</span><span>Decision risk</span></div>
-              <a class="text-link" href="assets/reports/trial-vs-control-report.pdf" target="_blank">Read case study <span aria-hidden="true">↗</span></a>
-            </div>
-          </article>
-
-          <article class="project-card project-card-wide reveal">
-            <a class="project-image" href="assets/code/csv_cleaning_tool.py" download aria-label="Download CSV data cleaning tool">
-              <img src="assets/images/data-cleaning-pipeline.svg" alt="Diagram of a configurable CSV cleaning workflow from raw input through cleaning profiles to audited CSV and Excel outputs">
-            </a>
-            <div class="project-card-body">
-              <div class="project-number">05 / Data preparation</div>
-              <h3>Configurable CSV Data Cleaning Pipeline</h3>
-              <p>
-                Built a reusable pandas command-line tool that applies safe or aggressive cleaning rules, records every transformation and exports analysis-ready files.
-              </p>
-              <div class="pipeline-stats" aria-label="Pipeline capabilities">
-                <div><strong>2</strong><span>cleaning profiles</span></div>
-                <div><strong>4</strong><span>core cleaning steps</span></div>
-                <div><strong>CSV</strong><span>standard output</span></div>
-                <div><strong>XLSX</strong><span>optional export</span></div>
-              </div>
-              <div class="decision-box compact">
-                <span>Engineering detail</span>
-                Preserves true missing values while trimming text, handles all-null numeric columns safely and produces a human-readable audit log.
-              </div>
-              <div class="project-footer">
-                <div class="tags"><span>Python</span><span>pandas</span><span>Validation</span><span>Automation</span></div>
-                <div class="project-links">
-                  <a class="text-link" href="assets/code/csv_cleaning_tool.py" download>Download Python <span aria-hidden="true">↓</span></a>
-                  <a class="text-link" href="assets/code/README.md" target="_blank">Read project notes <span aria-hidden="true">↗</span></a>
-                </div>
-              </div>
-            </div>
-          </article>
-        </div>
-
-        <section class="notebook-panel reveal" aria-labelledby="notebook-heading">
-          <div class="notebook-panel-heading">
-            <div>
-              <p class="eyebrow dark"><span></span> Technical evidence</p>
-              <h3 id="notebook-heading">Supporting analysis notebooks</h3>
-            </div>
-            <p>
-              Cleanly named portfolio copies of the original Colab work, preserving the SQL, Python and analytical steps behind the case studies.
-            </p>
-          </div>
-
-          <div class="notebook-grid">
-            <a class="notebook-card" href="assets/notebooks/ecommerce-funnel-analysis.ipynb" download>
-              <span class="notebook-icon" aria-hidden="true">01</span>
-              <div>
-                <strong>E-commerce Funnel Analysis</strong>
-                <p>Five-stage funnel reconstruction, drop-off calculations and behavioural segmentation.</p>
-                <small>Python · SQLite · Product analytics</small>
-              </div>
-              <span class="notebook-arrow" aria-hidden="true">↓</span>
-            </a>
-
-            <a class="notebook-card" href="assets/notebooks/sales-data-analysis-sql-pipeline.ipynb" download>
-              <span class="notebook-icon" aria-hidden="true">02</span>
-              <div>
-                <strong>Sales Analysis SQL Pipeline</strong>
-                <p>Spreadsheet ingestion, SQL aggregation, monthly product analysis and exports.</p>
-                <small>Python · pandas · SQLite</small>
-              </div>
-              <span class="notebook-arrow" aria-hidden="true">↓</span>
-            </a>
-
-            <a class="notebook-card" href="assets/notebooks/video-game-sales-analysis.ipynb" download>
-              <span class="notebook-icon" aria-hidden="true">03</span>
-              <div>
-                <strong>Video Game Sales Analysis</strong>
-                <p>An additional regional, platform and publisher sales exploration.</p>
-                <small>Python · DuckDB · Visualisation</small>
-              </div>
-              <span class="notebook-arrow" aria-hidden="true">↓</span>
-            </a>
-          </div>
-        </section>
-      </div>
-    </section>
-
-    <section class="section stats-section" id="statistics">
-      <div class="container">
-        <div class="section-heading reveal">
-          <div>
-            <p class="eyebrow dark"><span></span> Applied statistics in R</p>
-            <h2>Not just a p-value: effect sizes, assumptions and limits.</h2>
-          </div>
-          <p>
-            Four reports written from R Markdown, each stating hypotheses, test choice, exact statistics and an honest reading of what the sample can support.
-          </p>
-        </div>
-
-        <div class="stat-grid">
-          <article class="stat-card reveal">
-            <img src="assets/images/stress-intervention.png" alt="Paired stress scores before and after intervention for five participants" loading="lazy">
-            <div class="stat-body">
-              <span class="stat-kind">Paired-samples t-test</span>
-              <h3>Stress intervention</h3>
-              <div class="stat-figure">t(4) = 4.00 · p = .020</div>
-              <p>Mean stress fell from 7.4 to 4.2 (95% CI [0.81, 5.59]). With only five participants, I report it as promising, not generalisable.</p>
-              <a class="text-link" href="assets/reports/stress-intervention-t-test.pdf" target="_blank">Read report <span aria-hidden="true">↗</span></a>
-            </div>
-          </article>
-          <article class="stat-card reveal">
-            <img src="assets/images/memory-anova.png" alt="Interaction plot of memory performance by spacing and material" loading="lazy">
-            <div class="stat-body">
-              <span class="stat-kind">Two-way factorial ANOVA</span>
-              <h3>Memory: spacing × material</h3>
-              <div class="stat-figure">F(2,174) = 0.65 · p = .525</div>
-              <p>No significant main effects or interaction, and partial η² below .01. Visible line differences were negligible, not a reliable effect.</p>
-              <a class="text-link" href="assets/reports/memory-factorial-anova.pdf" target="_blank">Read report <span aria-hidden="true">↗</span></a>
-            </div>
-          </article>
-          <article class="stat-card reveal">
-            <img src="assets/images/chi-square-residuals.png" alt="Adjusted residuals showing which cells drive a chi-square association" loading="lazy">
-            <div class="stat-body">
-              <span class="stat-kind">Chi-square tests</span>
-              <h3>Categorical preference</h3>
-              <div class="stat-figure">χ²(1) = 4.74 · p = .030</div>
-              <p>Goodness-of-fit found no departure from 50/50; independence found a gender–preference link. Adjusted residuals (≈ ±2.38) showed which cells drove it.</p>
-              <a class="text-link" href="assets/reports/categorical-preference-chi-square.pdf" target="_blank">Read report <span aria-hidden="true">↗</span></a>
-            </div>
-          </article>
-          <article class="stat-card reveal">
-            <img src="assets/images/heart-interaction.png" alt="Interaction plot of fasting programme and exercise frequency on heart-health improvement" loading="lazy">
-            <div class="stat-body">
-              <span class="stat-kind">t-tests · χ² · one-way &amp; factorial ANOVA</span>
-              <h3>Four-study combined report</h3>
-              <div class="stat-figure">Fasting × exercise: F(3,32) = 13.40 · p &lt; .001</div>
-              <p>Covers anxiety interventions, film preference, diets (η² = .58) and a heart-health interaction, where one fasting–exercise combination did worse than control.</p>
-              <a class="text-link" href="assets/reports/applied-statistical-analysis-in-r.pdf" target="_blank">Read report <span aria-hidden="true">↗</span></a>
-            </div>
-          </article>
+  <div class="hl-grid">
+    <article class="hl-card">
+      <a class="hl-img contain" href="assets/reports/funnel-analysis-report.pdf" target="_blank" rel="noopener"><img src="assets/images/funnel-visual.svg" alt="Funnel chart showing a 59.9 percent drop between product view and cart" loading="lazy"></a>
+      <div class="hl-body">
+        <h3>🛒 E-commerce Funnel &amp; Behaviour</h3>
+        <p class="tagline">Product analytics · Python · SQL · Excel</p>
+        <ul>
+          <li><strong>20.2%</strong> of users completed a purchase across a reconstructed five-stage journey.</li>
+          <li><strong>59.9%</strong> dropped between product view and add-to-cart; checkout retention was 90.0%.</li>
+          <li><strong>Decision:</strong> prioritise product-page clarity, trust signals and mobile usability, then validate with controlled A/B tests.</li>
+        </ul>
+        <div class="actions">
+          <a class="button primary" href="assets/reports/funnel-analysis-report.pdf" target="_blank" rel="noopener">Read report ↗</a>
+          <a class="text-link" href="assets/notebooks/ecommerce-funnel-analysis.ipynb" download>Notebook ↓</a>
         </div>
       </div>
-    </section>
+    </article>
 
-    <section class="section toolkit-section" id="toolkit">
-      <div class="container toolkit-grid">
-        <div class="toolkit-intro reveal">
-          <p class="eyebrow"><span></span> Skills</p>
-          <h2>The data analyst toolkit, shown in the work above.</h2>
-          <p>
-            Each skill below is used in a project on this page, not just listed. My psychology background adds research design and
-            a habit of asking what the behaviour behind the numbers actually is.
-          </p>
-          <div class="coursework">
-            <span>Coursework</span>
-            <div class="chips"><b>Inferential Statistics</b><b>Business Statistics</b><b>Regression</b><b>Time Series</b><b>Machine Learning</b><b>Operations Research</b><b>Research Design</b></div>
-          </div>
-        </div>
-        <div class="skill-matrix reveal">
-          <div class="skill-row">
-            <h3>Querying &amp; databases</h3>
-            <div class="chips"><b>SQL</b><b>SQLite</b><b>DuckDB</b><b>PostgreSQL</b><b>Aggregations &amp; joins</b></div>
-            <p>Funnel reconstruction and sales pipelines in the notebooks.</p>
-          </div>
-          <div class="skill-row">
-            <h3>Programming &amp; cleaning</h3>
-            <div class="chips"><b>Python</b><b>pandas</b><b>R</b><b>Parquet</b><b>Excel / PivotTables</b></div>
-            <p>A reusable CSV cleaning pipeline with an audit log.</p>
-          </div>
-          <div class="skill-row">
-            <h3>Statistics</h3>
-            <div class="chips"><b>t-tests</b><b>ANOVA</b><b>Chi-square</b><b>Confidence intervals</b><b>Effect sizes</b><b>Matched controls</b></div>
-            <p>Four R reports plus the trial-vs-control evaluation.</p>
-          </div>
-          <div class="skill-row">
-            <h3>Analytics &amp; communication</h3>
-            <div class="chips"><b>Funnel analysis</b><b>Segmentation</b><b>KPI design</b><b>Streamlit</b><b>Plotly</b><b>Matplotlib</b><b>Written reports</b></div>
-            <p>Every case study ends in a recommendation and its limitations.</p>
-          </div>
+    <article class="hl-card">
+      <a class="hl-img" href="https://sa-tech-job-market-3jqhrdat8echekjaasjvyv.streamlit.app" target="_blank" rel="noopener noreferrer"><img src="assets/images/job-market-dashboard.png" alt="Streamlit dashboard of South African tech vacancies with vacancy activity and role-level mix" loading="lazy"></a>
+      <div class="hl-body">
+        <h3>📈 SA Tech Job Market Intelligence</h3>
+        <p class="tagline">Analytics engineering · live dashboard</p>
+        <ul>
+          <li><strong>10</strong> recruitment-platform adapters collecting vacancies straight from employer career sites.</li>
+          <li><strong>35</strong> employer sources currently collected, from 44 configured and 51 in the registry.</li>
+          <li>Validated Parquet marts behind a Streamlit + DuckDB dashboard; early-career roles are a filter, with sample-size caveats.</li>
+        </ul>
+        <div class="project-highlights"><span>Python</span><span>pandas</span><span>DuckDB</span><span>Parquet</span><span>Streamlit</span></div>
+        <div class="actions">
+          <a class="button primary" href="https://sa-tech-job-market-3jqhrdat8echekjaasjvyv.streamlit.app" target="_blank" rel="noopener noreferrer">Live dashboard ↗</a>
+          <a class="text-link" href="https://github.com/nonluthando/sa-grad-tech-job-market" target="_blank" rel="noopener noreferrer">Repository ↗</a>
         </div>
       </div>
-    </section>
+    </article>
 
-    <section class="section about-section" id="about">
-      <div class="container about-grid">
-        <div class="about-statement reveal">
-          <p class="eyebrow"><span></span> About</p>
-          <blockquote>“I’m most interested in the moment where data changes what a team does next.”</blockquote>
-        </div>
-        <div class="about-copy reveal">
-          <p>
-            I am a South African graduate with a BSc in Computer Science and Psychology, supported by applied statistics coursework.
-            That combination shapes how I work: I care about sound data, but also about the people, incentives and behaviours behind it.
-          </p>
-          <p>
-            I’m particularly drawn to product analytics, customer behaviour, experimentation and data workflows that reduce repetitive work.
-          </p>
-          <p>
-            In 2026 I worked as a software engineering contractor at an EdTech startup, contributing to established Python/Flask and Laravel codebases
-            with code review, automated tests and production debugging. That is why my analysis code is tested, reproducible and documented.
-          </p>
-          <div class="about-links">
-            <a href="mailto:luthandombuyane1@outlook.com">luthandombuyane1@outlook.com</a>
-            <a href="https://www.linkedin.com/in/luthandombuyane213" target="_blank" rel="noopener noreferrer">linkedin.com/in/luthandombuyane213 <span aria-hidden="true">↗</span></a>
-            <a href="https://github.com/nonluthando" target="_blank" rel="noopener noreferrer">github.com/nonluthando <span aria-hidden="true">↗</span></a>
-          </div>
+    <article class="hl-card">
+      <a class="hl-img" href="assets/reports/retail-segmentation-report.pdf" target="_blank" rel="noopener"><img src="assets/images/retail-segmentation.webp" alt="Charts comparing customer distribution with sales contribution across retail segments" loading="lazy"></a>
+      <div class="hl-body">
+        <h3>🛍 Retail Customer Segmentation</h3>
+        <p class="tagline">Customer analytics · segmentation · EDA</p>
+        <ul>
+          <li>Compared customer share with sales contribution across lifestage and value segments.</li>
+          <li>Premium customers, Older Families and Retirees contributed more sales than their population share suggested.</li>
+          <li>Supports targeted placement and promotion rather than one-size-fits-all marketing.</li>
+        </ul>
+        <div class="actions">
+          <a class="button primary" href="assets/reports/retail-segmentation-report.pdf" target="_blank" rel="noopener">Read report ↗</a>
         </div>
       </div>
-    </section>
+    </article>
 
-    <section class="contact-section">
-      <div class="container contact-card reveal">
-        <div>
-          <p class="eyebrow light"><span></span> Open to junior data analyst roles</p>
-          <h2>Have a question worth answering with data?</h2>
+    <article class="hl-card">
+      <a class="hl-img" href="assets/reports/trial-vs-control-report.pdf" target="_blank" rel="noopener"><img src="assets/images/trial-control.webp" alt="Trial and control store performance charts with confidence intervals" loading="lazy"></a>
+      <div class="hl-body">
+        <h3>🧪 Trial vs Control Store Evaluation</h3>
+        <p class="tagline">Experiment evaluation · matched controls</p>
+        <ul>
+          <li>Matched trial store 77 with control store 233 on pre-trial performance.</li>
+          <li><strong>2 of 3</strong> trial months were statistically significant (March t = 7.34, April t = 12.48).</li>
+          <li><strong>Decision:</strong> extend or replicate the trial before a full rollout, because uplift was not uniform.</li>
+        </ul>
+        <div class="actions">
+          <a class="button primary" href="assets/reports/trial-vs-control-report.pdf" target="_blank" rel="noopener">Read report ↗</a>
         </div>
-        <a class="button button-light" href="mailto:luthandombuyane1@outlook.com">Email me <span aria-hidden="true">↗</span></a>
       </div>
-    </section>
-  </main>
+    </article>
+  </div>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© <span data-year></span> Luthando Mbuyane</p>
-      <p>Designed around evidence, clarity and useful decisions.</p>
+  <article class="hl-card" style="margin-bottom:1.5rem">
+    <a class="hl-img contain" href="assets/code/csv_cleaning_tool.py" download><img src="assets/images/data-cleaning-pipeline.svg" alt="Diagram of a configurable CSV cleaning workflow from raw input through cleaning profiles to audited CSV and Excel outputs" loading="lazy"></a>
+    <div class="hl-body">
+      <h3>🧹 Configurable CSV Cleaning Pipeline</h3>
+      <p class="tagline">Data preparation · Python · pandas · validation</p>
+      <ul>
+        <li>Reusable command-line tool with <strong>safe</strong> and <strong>aggressive</strong> cleaning profiles.</li>
+        <li>Preserves true missing values, handles all-null numeric columns and writes a human-readable audit log.</li>
+        <li>Exports analysis-ready CSV, with optional Excel output.</li>
+      </ul>
+      <div class="actions">
+        <a class="button primary" href="assets/code/csv_cleaning_tool.py" download>Download Python ↓</a>
+        <a class="text-link" href="assets/code/README.md" target="_blank" rel="noopener">Project notes ↗</a>
+      </div>
     </div>
-  </footer>
+  </article>
 
-  <script src="script.js"></script>
+  <h2 id="pipeline">🔧 Inside the job-market pipeline</h2>
+  <p class="muted">
+    Employer-direct collection gives a different view from job boards, and conservative deduplication stops repeated vacancies inflating the counts.
+  </p>
+  <div class="workflow" aria-label="Pipeline stages">
+    <span>Employer career sites</span><span>Provider adapters</span><span>Raw snapshots</span><span>Validation</span><span>Cleaning</span><span>Skills &amp; requirements</span><span>Classification</span><span>Deduplication</span><span>Parquet marts</span><span>Dashboard</span>
+  </div>
+
+  <details class="toggle" open>
+    <summary>Collect and preserve</summary>
+    <div class="toggle-body">Ten dedicated adapters (Greenhouse, Lever, Workday, SAP SuccessFactors, Oracle HCM, WordPress Job Manager, Workable, Breezy HR, SmartRecruiters and Ashby) across a 51-employer registry, each handling its own pagination, detail endpoints and failure modes. Raw JSON or HTML is stored unchanged with timestamps and SHA-256 hashes, so cleaning logic can improve without recollecting history.</div>
+  </details>
+  <details class="toggle">
+    <summary>Standardise and extract</summary>
+    <div class="toggle-body">HTML is stripped, locations and workplace type normalised, and missing values handled explicitly. A curated taxonomy extracts languages, frameworks, databases, cloud platforms and tools, keeping the matched text as evidence, and splits minimum from preferred requirements.</div>
+  </details>
+  <details class="toggle">
+    <summary>Classify, explainably</summary>
+    <div class="toggle-body">Rule-based classification by seniority, role, domain, employment and workplace type comes first. Optional scikit-learn (TF-IDF + logistic regression) and Gemini layers only suggest values for unresolved vacancies, write to separate fields and never overwrite the canonical data.</div>
+  </details>
+  <details class="toggle">
+    <summary>Publish and validate</summary>
+    <div class="toggle-body"><code>jobs.parquet</code> is the one-row-per-vacancy source of truth, with <code>job_skills</code> and <code>job_requirements</code> tables beside it. Dashboard marts are checked for job keys and joins, and three data-quality reports cover transformation, skills and the dashboard contract. Every regex classifier was audited against live postings, and each confirmed bug was fixed and re-verified.</div>
+  </details>
+
+  <h2 id="statistics">📐 Applied statistics in R</h2>
+  <p class="muted">
+    Four reports written from R Markdown, each stating hypotheses, test choice, exact statistics and an honest reading of what the sample can support.
+  </p>
+
+  <div class="shots">
+    <figure>
+      <a href="assets/reports/stress-intervention-t-test.pdf" target="_blank" rel="noopener"><img src="assets/images/stress-intervention.png" alt="Paired stress scores before and after intervention for five participants" loading="lazy"></a>
+      <figcaption><strong>Paired t-test · stress intervention</strong>t(4) = 4.00, p = .020. Mean stress fell from 7.4 to 4.2 (95% CI [0.81, 5.59]); only five participants, so promising, not generalisable. <a href="assets/reports/stress-intervention-t-test.pdf" target="_blank" rel="noopener">Report ↗</a></figcaption>
+    </figure>
+    <figure>
+      <a href="assets/reports/memory-factorial-anova.pdf" target="_blank" rel="noopener"><img src="assets/images/memory-anova.png" alt="Interaction plot of memory performance by spacing and material" loading="lazy"></a>
+      <figcaption><strong>Two-way ANOVA · spacing × material</strong>F(2,174) = 0.65, p = .525. No significant effects and partial η² below .01, so the visible line changes were negligible. <a href="assets/reports/memory-factorial-anova.pdf" target="_blank" rel="noopener">Report ↗</a></figcaption>
+    </figure>
+    <figure>
+      <a href="assets/reports/categorical-preference-chi-square.pdf" target="_blank" rel="noopener"><img src="assets/images/chi-square-residuals.png" alt="Adjusted residuals showing which cells drive a chi-square association" loading="lazy"></a>
+      <figcaption><strong>Chi-square · categorical preference</strong>χ²(1) = 4.74, p = .030. Adjusted residuals (≈ ±2.38) showed which cells drove the gender–preference association. <a href="assets/reports/categorical-preference-chi-square.pdf" target="_blank" rel="noopener">Report ↗</a></figcaption>
+    </figure>
+    <figure>
+      <a href="assets/reports/applied-statistical-analysis-in-r.pdf" target="_blank" rel="noopener"><img src="assets/images/heart-interaction.png" alt="Interaction plot of fasting programme and exercise frequency on heart-health improvement" loading="lazy"></a>
+      <figcaption><strong>Four-study combined report</strong>Anxiety, film preference, diets (η² = .58) and a fasting × exercise interaction, F(3,32) = 13.40, p &lt; .001, where one combination did worse than control. <a href="assets/reports/applied-statistical-analysis-in-r.pdf" target="_blank" rel="noopener">Report ↗</a></figcaption>
+    </figure>
+  </div>
+
+  <h2 id="notebooks">📓 Supporting notebooks</h2>
+  <p class="muted">Portfolio copies of the original Colab work, preserving the SQL, Python and analytical steps behind the case studies.</p>
+  <div class="proj-list">
+    <a class="proj-row" href="assets/notebooks/ecommerce-funnel-analysis.ipynb" download>
+      <span class="emoji" aria-hidden="true">🛒</span>
+      <span><span class="t">E-commerce Funnel Analysis</span><span class="d">Five-stage funnel, drop-off calculations, behavioural segmentation</span></span>
+      <span class="s">Python · SQLite</span>
+    </a>
+    <a class="proj-row" href="assets/notebooks/sales-data-analysis-sql-pipeline.ipynb" download>
+      <span class="emoji" aria-hidden="true">🗃</span>
+      <span><span class="t">Sales Analysis SQL Pipeline</span><span class="d">Spreadsheet ingestion, SQL aggregation, monthly product analysis</span></span>
+      <span class="s">pandas · SQLite</span>
+    </a>
+    <a class="proj-row" href="assets/notebooks/video-game-sales-analysis.ipynb" download>
+      <span class="emoji" aria-hidden="true">🎮</span>
+      <span><span class="t">Video Game Sales Analysis</span><span class="d">Regional, platform and publisher sales exploration</span></span>
+      <span class="s">DuckDB · visualisation</span>
+    </a>
+  </div>
+
+  <h2 id="skills">🛠 Skills</h2>
+  <p class="muted">Each skill is used in a project above, not just listed.</p>
+  <dl class="props">
+    <dt>🗄 Querying</dt>
+    <dd><span class="tag blue">SQL</span><span class="tag blue">SQLite</span><span class="tag orange">DuckDB</span><span class="tag green">PostgreSQL</span><span class="tag">Joins &amp; aggregations</span></dd>
+    <dt>🧼 Preparation</dt>
+    <dd><span class="tag yellow">Python</span><span class="tag green">pandas</span><span class="tag purple">R</span><span class="tag pink">Parquet</span><span class="tag">Excel / PivotTables</span><span class="tag">Data-quality checks</span></dd>
+    <dt>📐 Statistics</dt>
+    <dd><span class="tag purple">t-tests</span><span class="tag blue">ANOVA</span><span class="tag yellow">Chi-square</span><span class="tag pink">Confidence intervals</span><span class="tag green">Effect sizes</span><span class="tag orange">Matched controls</span></dd>
+    <dt>📊 Analytics</dt>
+    <dd><span class="tag green">Funnel analysis</span><span class="tag blue">Segmentation</span><span class="tag yellow">KPI design</span><span class="tag purple">Experiment evaluation</span></dd>
+    <dt>🖼 Communication</dt>
+    <dd><span class="tag">Streamlit</span><span class="tag">Plotly</span><span class="tag">Matplotlib</span><span class="tag">Written reports</span></dd>
+  </dl>
+
+  <h2 id="experience">💼 Experience</h2>
+  <p class="muted">
+    Software Engineering Contractor · EdTech startup · Fixed-term contract · 2026.
+    Worked in established Python/Flask and Laravel codebases with code review, automated tests and production debugging.
+    It is why my analysis code is tested, reproducible and documented.
+  </p>
+  <p>I also build software and ML projects; see the <a href="https://github.com/nonluthando" target="_blank" rel="noopener noreferrer">GitHub profile</a>.</p>
+
+  <h2 id="contact">✉️ Let’s talk about the work</h2>
+  <p class="muted">Open to junior data analyst roles in South Africa, including relocation.</p>
+  <div class="contact-links">
+    <a href="mailto:luthandombuyane1@outlook.com"><span>Email</span><strong>luthandombuyane1@outlook.com</strong></a>
+    <a href="https://www.linkedin.com/in/luthandombuyane213" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><strong>luthandombuyane213 ↗</strong></a>
+    <a href="https://github.com/nonluthando" target="_blank" rel="noopener noreferrer"><span>GitHub</span><strong>nonluthando ↗</strong></a>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <p>© 2026 Luthando Mbuyane</p>
+    <a href="#top">Back to top ↑</a>
+  </div>
+</footer>
+
 </body>
 </html>
