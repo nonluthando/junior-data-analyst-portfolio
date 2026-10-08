@@ -146,7 +146,7 @@
             <div class="project-number">02 / Labour-market analytics · Live</div>
             <h3>South African Tech Job Market Intelligence</h3>
             <p class="project-summary">
-              An end-to-end analytics-engineering pipeline that collects public technology vacancies directly from employer career sites across ten recruitment platforms, standardises them into a tested, schema-controlled dataset and publishes a dashboard on hiring, skills and early-career demand.
+              An end-to-end analytics-engineering pipeline that collects public technology vacancies directly from employer career sites across multiple recruitment platforms, standardises them into a tested, schema-controlled dataset and publishes a dashboard on hiring, skills and early-career demand.
             </p>
             <ul class="finding-list">
               <li><strong>2,566</strong> vacancies from 15 employers (snapshot of 4 Oct 2026).</li>
@@ -185,7 +185,7 @@
           <div class="pipeline-cols">
             <div>
               <h4>Collect &amp; preserve</h4>
-              <p>Dedicated adapters for Greenhouse, Lever, Workday, SAP SuccessFactors, Oracle HCM, WordPress Job Manager, Workable, Breezy HR, SmartRecruiters and Ashby, each handling its own pagination, detail endpoints and failure modes. Raw JSON/HTML is stored unchanged with timestamps and SHA-256 hashes, so cleaning logic can improve without recollecting history.</p>
+              <p>Dedicated adapters for platforms including Greenhouse, Lever, Workday, SAP SuccessFactors, Oracle HCM, Workable, SmartRecruiters and Ashby, each handling its own pagination, detail endpoints and failure modes. Raw JSON/HTML is stored unchanged with timestamps and SHA-256 hashes, so cleaning logic can improve without recollecting history.</p>
             </div>
             <div>
               <h4>Standardise &amp; extract</h4>
@@ -202,9 +202,9 @@
           </div>
 
           <div class="pipeline-proof">
-            <div><strong>255</strong><span>automated tests</span></div>
-            <div><strong>6</strong><span>classifier bugs found and fixed in a regex audit against live data</span></div>
-            <div><strong>3</strong><span>data-quality reports</span></div>
+            <div><strong>Tested</strong><span>pytest suite covering ingestion, classification and the dashboard contract</span></div>
+            <div><strong>Audited</strong><span>every regex classifier checked against live postings, with each confirmed bug fixed and re-verified</span></div>
+            <div><strong>3</strong><span>data-quality reports: transformation, skills and dashboard contract</span></div>
           </div>
         </section>
 
