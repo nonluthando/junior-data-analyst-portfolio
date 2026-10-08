@@ -146,12 +146,12 @@
             <div class="project-number">02 / Labour-market analytics · Live</div>
             <h3>South African Tech Job Market Intelligence</h3>
             <p class="project-summary">
-              An end-to-end analytics-engineering pipeline that collects public technology vacancies directly from employer career sites across multiple recruitment platforms, standardises them into a tested, schema-controlled dataset and publishes a dashboard on hiring, skills and early-career demand.
+              An end-to-end analytics-engineering pipeline that collects public technology vacancies directly from employer career sites across ten recruitment platforms, standardises them into a tested, schema-controlled dataset and publishes a dashboard on hiring, skills and early-career demand.
             </p>
             <ul class="finding-list">
-              <li><strong>2,566</strong> vacancies from 15 employers (snapshot of 4 Oct 2026).</li>
-              <li><strong>90</strong> technologies extracted and normalised, each counted once per vacancy.</li>
-              <li><strong>29</strong> early-career roles, so thin early-career supply is reported with sample-size caveats.</li>
+              <li><strong>10</strong> recruitment-platform adapters, each tested against its own API shape and failure modes.</li>
+              <li><strong>35</strong> employer sources currently collected, from 44 configured and 51 employers in the registry.</li>
+              <li>Early-career roles are a filter, not the scope, so thin supply is shown with sample-size caveats.</li>
             </ul>
             <div class="decision-box">
               <span>Analytical decision</span>
@@ -185,7 +185,7 @@
           <div class="pipeline-cols">
             <div>
               <h4>Collect &amp; preserve</h4>
-              <p>Dedicated adapters for platforms including Greenhouse, Lever, Workday, SAP SuccessFactors, Oracle HCM, Workable, SmartRecruiters and Ashby, each handling its own pagination, detail endpoints and failure modes. Raw JSON/HTML is stored unchanged with timestamps and SHA-256 hashes, so cleaning logic can improve without recollecting history.</p>
+              <p>Ten dedicated adapters (Greenhouse, Lever, Workday, SAP SuccessFactors, Oracle HCM, WordPress Job Manager, Workable, Breezy HR, SmartRecruiters and Ashby) across a 51-employer registry, each handling its own pagination, detail endpoints and failure modes. Raw JSON/HTML is stored unchanged with timestamps and SHA-256 hashes, so cleaning logic can improve without recollecting history.</p>
             </div>
             <div>
               <h4>Standardise &amp; extract</h4>
