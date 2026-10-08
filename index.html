@@ -146,7 +146,7 @@
             <div class="project-number">02 / Labour-market analytics · Live</div>
             <h3>South African Tech Job Market Intelligence</h3>
             <p class="project-summary">
-              Collects public vacancies directly from employer career sites, standardises them into a tested dataset and publishes an interactive dashboard on hiring, skills and early-career demand.
+              An end-to-end analytics-engineering pipeline that collects public technology vacancies directly from employer career sites across ten recruitment platforms, standardises them into a tested, schema-controlled dataset and publishes a dashboard on hiring, skills and early-career demand.
             </p>
             <ul class="finding-list">
               <li><strong>2,566</strong> vacancies from 15 employers (snapshot of 4 Oct 2026).</li>
@@ -166,6 +166,47 @@
             </div>
           </div>
         </article>
+
+        <section class="pipeline-panel reveal" aria-labelledby="pipeline-heading">
+          <div class="notebook-panel-heading">
+            <div>
+              <p class="eyebrow dark"><span></span> Under the hood</p>
+              <h3 id="pipeline-heading">From employer career pages to analysis-ready data</h3>
+            </div>
+            <p>
+              Employer-direct collection gives a different view from job boards, and conservative deduplication keeps repeated vacancies from inflating the counts.
+            </p>
+          </div>
+
+          <ol class="flow" aria-label="Pipeline stages">
+            <li>Collect</li><li>Raw snapshots</li><li>Validate</li><li>Clean</li><li>Extract skills</li><li>Classify</li><li>Deduplicate</li><li>Parquet marts</li><li>Dashboard</li>
+          </ol>
+
+          <div class="pipeline-cols">
+            <div>
+              <h4>Collect &amp; preserve</h4>
+              <p>Dedicated adapters for Greenhouse, Lever, Workday, SAP SuccessFactors, Oracle HCM, WordPress Job Manager, Workable, Breezy HR, SmartRecruiters and Ashby, each handling its own pagination, detail endpoints and failure modes. Raw JSON/HTML is stored unchanged with timestamps and SHA-256 hashes, so cleaning logic can improve without recollecting history.</p>
+            </div>
+            <div>
+              <h4>Standardise &amp; extract</h4>
+              <p>HTML stripped, locations and workplace type normalised, and missing values handled explicitly. A curated taxonomy extracts languages, frameworks, databases, cloud platforms and tools, keeping the matched text as evidence, and splits minimum from preferred requirements.</p>
+            </div>
+            <div>
+              <h4>Classify, explainably</h4>
+              <p>Rule-based classification by seniority, role, domain, employment and workplace type comes first. Optional scikit-learn (TF-IDF + logistic regression) and Gemini layers only suggest values for unresolved vacancies, write to separate fields and never overwrite the canonical data.</p>
+            </div>
+            <div>
+              <h4>Publish &amp; validate</h4>
+              <p><code>jobs.parquet</code> is the one-row-per-vacancy source of truth, with <code>job_skills</code> and <code>job_requirements</code> tables beside it. Dashboard marts are checked for job keys and joins, and three data-quality reports cover transformation, skills and the dashboard contract.</p>
+            </div>
+          </div>
+
+          <div class="pipeline-proof">
+            <div><strong>255</strong><span>automated tests</span></div>
+            <div><strong>6</strong><span>classifier bugs found and fixed in a regex audit against live data</span></div>
+            <div><strong>3</strong><span>data-quality reports</span></div>
+          </div>
+        </section>
 
         <div class="project-grid">
           <article class="project-card reveal">

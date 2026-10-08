@@ -374,3 +374,21 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .project-card .decision-box span { color: #0e7490; }
 .project-card-wide .project-image { background: #171329; }
 .project-card-wide .project-image img { object-fit: contain; }
+
+/* Job-market pipeline panel */
+.pipeline-panel { margin-top: 24px; padding: 36px; border: 1px solid #dcd5ca; border-radius: 26px; background: #eee9df; color: var(--ink); }
+.pipeline-panel .notebook-panel-heading { margin-bottom: 28px; }
+.flow { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin: 0 0 30px; padding: 0; counter-reset: step; }
+.flow li { counter-increment: step; display: flex; align-items: center; gap: 8px; padding: 8px 14px 8px 8px; border-radius: 999px; background: #1a1530; color: #fff; font-size: 12.5px; font-weight: 700; }
+.flow li::before { content: counter(step); display: grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; background: linear-gradient(135deg, var(--violet), var(--cyan)); color: #151124; font-size: 11px; font-weight: 850; }
+.pipeline-cols { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+.pipeline-cols > div { padding: 22px; border: 1px solid #ddd6cb; border-radius: 18px; background: #fffdf8; }
+.pipeline-cols h4 { margin: 0 0 8px; font-size: 18px; letter-spacing: -.02em; }
+.pipeline-cols p { margin: 0; color: var(--ink-muted); font-size: 14px; }
+.pipeline-cols code { padding: 1px 6px; border-radius: 6px; background: #eee9df; font-size: 12.5px; }
+.pipeline-proof { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 14px; }
+.pipeline-proof > div { padding: 18px 22px; border-radius: 18px; background: #1a1530; color: #c5bfce; }
+.pipeline-proof strong { display: block; color: var(--cyan); font-size: 32px; line-height: 1.1; letter-spacing: -.04em; }
+.pipeline-proof span { font-size: 13px; }
+@media (max-width: 960px) { .pipeline-cols, .pipeline-proof { grid-template-columns: 1fr; } }
+@media (max-width: 720px) { .pipeline-panel { padding: 24px 18px; } }
